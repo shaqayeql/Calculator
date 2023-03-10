@@ -7,17 +7,25 @@ public class Main {
         Calculator calc = new Calculator();
         calc.setupFrame();
 
-        calc.creatButton("1" , 50 , 50);
-        calc.creatButton("2" , 130 , 50);
-        calc.creatButton("3" , 210 , 50);
-        calc.creatButton("+" , 290 , 50);
-        calc.creatButton("4" , 50 , 130);
-        calc.creatButton("5" , 130 , 130);
-        calc.creatButton("6" , 210 , 130);
-        calc.creatButton("-" , 290 , 130);
-        calc.creatButton("7" , 50 , 210);
-        calc.creatButton("8" , 130 , 210);
-        calc.creatButton("9" , 210 , 210);
-        calc.creatButton("*" , 290 , 210);
+        calc.createButton("1" , 50 , 50 , 70 , 70);
+        calc.createButton("2" , 130 , 50 , 70 , 70);
+        calc.createButton("3" , 210 , 50 , 70 , 70);
+        calc.createButton("+" , 290 , 50 , 70 , 70);
+        calc.createButton("4" , 50 , 130 , 70 , 70);
+        calc.createButton("5" , 130 , 130 , 70 , 70);
+        calc.createButton("6" , 210 , 130 , 70 , 70);
+        calc.createButton("*" , 290 , 130 , 70 , 70);
+        calc.createButton("7" , 50 , 210 , 70 , 70);
+        calc.createButton("8" , 130 , 210 , 70 , 70);
+        calc.createButton("9" , 210 , 210 , 70 , 70);
+        calc.createButton("/" , 290 , 210 , 70 , 70);
+        calc.createButton("." , 50 , 290 , 70 , 70);
+        calc.createButton("0" , 130 , 290 , 70 , 70);
+        calc.createButton("=" , 210 , 290 , 70 , 70);
+        calc.createButton("-" , 290 , 290 , 70 , 70);
+        calc.createButton("Delete" , 50 , 370 , 140 , 35);
+        calc.createButton("Clear" , 220 , 370 , 140 , 35);
+
+        calc.createTextBox(50 , 10 , 310 , 30);
     }
 }

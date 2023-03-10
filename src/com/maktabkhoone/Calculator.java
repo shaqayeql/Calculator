@@ -17,9 +17,15 @@ public class Calculator {
         frame.setLayout(null);
     }
 
-    public void creatButton(String buttonName , int buttonX , int buttonY){
+    public void createButton(String buttonName , int buttonX , int buttonY , int buttonWidth , int buttonHeight){
         JButton button = new JButton(buttonName);
-        button.setBounds(buttonX, buttonY , 70 , 70 );
+        button.setBounds(buttonX, buttonY , buttonWidth , buttonHeight );
         frame.add(button);
+    }
+
+    public void createTextBox(int textX , int textY , int textWidth , int textHeight){
+        JTextField text = new JTextField();
+        text.setBounds(textX , textY , textWidth , textHeight);
+        frame.add(text);
     }
 }
